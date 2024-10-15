@@ -19,7 +19,7 @@ size_t tape_size = 1024;
 void init_tape()
 {
 	printf("Allocating %d tape reserved bytes\n", tape_size);
-	tape = (char)malloc(tape_size);
+	tape = (char*)malloc(tape_size);
 
 	if (tape == NULL)
 	{
