@@ -27,7 +27,7 @@ void init_tape()
 		exit(-1);
 	}
 
-	//memset(tape, 0, tape_size-1);
+	memset(tape, 0, tape_size-1);
 
 	*(tape + tape_size) = '\0'; // Use NULL char to denote the end of the tape.
 
